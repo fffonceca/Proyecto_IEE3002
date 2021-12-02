@@ -48,7 +48,7 @@ if Capacidad_bateria > 0
 
     ## plot
     obj_plot2 = plot(title="Flujos sobre la Batería", xlabel="Horas", dpi=100, 
-                    size=(1600,800));
+                    size=(1600,600));
     plot!(eje_tiempo, eje_y2[:,1], label="Estado de Carga", lw = 2);
     plot!(eje_tiempo, eje_y2[:,2], label="Flujo de energía", lw = 2);
     savefig(obj_plot2, "resultado/graficos/SOC.png")
